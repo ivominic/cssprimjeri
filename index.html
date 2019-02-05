@@ -4,8 +4,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">    
     <title>Materializecss</title>
 
     <!--Let browser know website is optimized for mobile-->
@@ -18,6 +17,75 @@
       <div class="red white-text">Div sa crvenom klasom i bijelim tekstom</div>
       <div class="blue white-text darken-3">Div sa plavom klasom, potamnjenom, i bijelim tekstom</div>
       <div class="deep-purple blue-text lighten-3">Div sa crvenom klasom, posvijetljenom, i plavim tekstom</div>
+      <!--BUTTONS-->
+      <button class="btn">Dugme</button>
+      <button class="btn waves-effect waves-light">Dugme sa svijetlim talasima na klik</button>
+      <button class="btn btn-large">Dugme veliko</button>
+      <button class="btn disabled">Dugme disabled</button>
+      <button class="btn large blue lighten-2">Dugme</button>
+      <button class="btn large yellow black-text">Dugme</button>
+      <button class="btn large green"><i class="material-icons left">cloud</i> Dugme sa ikonicom lijevo</button>
+      <!--FLOATING BUTTONS-->
+      <a href="#" class="btn-floating red btn-large"><i class="large material-icons">error</i></a>
+      <!--FIXED ACTION BUTTON-->
+      <div class="fixed-action-btn">
+          <a href="#" class="btn-floating purple btn-large"><i class="large material-icons">mode_edit</i></a>
+          <ul>
+            <li><a href="#" class="btn-floating blue"><i class="large material-icons">publish</i></a></li>
+            <li><a href="#" class="btn-floating green"><i class="large material-icons">insert_chart</i></a></li>
+          </ul>
+      </div>
+      <!--FLAT BUTTON-->
+      <a href="#" class="waves-effect wave-teal btn-flat">Flat button</a>
+      <!--HELPERS-->
+      <!--ALIGNMENT-->
+      <div>
+        <h5 class="left-align">Lijevo poravnanje</h5>
+        <h5 class="right-align">Desno poravnanje</h5>
+        <h5 class="center-align">Centralno poravnanje</h5>
+      </div>
+      <!--QUICK FLOATS-->
+      <div class="left">Lijevi float</div>
+      <div class="right">Desni float</div>
+      <div class="clearfix">Neophodno postaviti div klase "clearfix" da se ne bi prenosilo poravnanje u nastavku dokumenta</div>
+      <!--HIDE CONTENT-->
+      <div class="hide">Skriveno za sve uređaje</div>
+      <div class="hide-on-small-only">Skriveno za male ekrane</div>
+      <div class="hide-on-med-only">Skriveno za srednje ekrane</div>
+      <div class="hide-on-med-and-down">Skriveno za srednje i manje</div>
+      <div class="hide-on-med-and-up">Skriveno za srednje i veće</div>
+      <div class="hide-on-large-only">Skriveno za velike uređaje</div>
+      <!--TRUNCATE-->
+      <h4 class="truncate">truncate klasa prikazuje sadržaj samo prvog reda teksta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta adipisci maiores iusto dolorem voluptatum mollitia inventore officiis culpa! Nam magni eaque eius minus officiis ex amet nihil mollitia incidunt impedit.</h4>
+      <!--EFFECTS-->
+      <!--HOVERABLE-->
+      <div class="red white-text hoverable">Hoverable klasa daje efekte na prelazak mišem</div>
+      <!--PULSE-->
+      <div class="blue white-text pulse">pulse klasa - pulsiranje, stalno.</div>
+      <!--SHADOWS-->
+      <p class="z-depth-1">Sjenka z-depth-1</p>
+      <p class="z-depth-2">Sjenka z-depth-2</p>
+      <p class="z-depth-3">Sjenka z-depth-3</p>
+      <p class="z-depth-4">Sjenka z-depth-4</p>
+      <p class="z-depth-5">Sjenka z-depth-5</p>
+      <!--FLOW TEXT-->
+      <p class="flow-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores nostrum doloribus, architecto minima sequi dolore consequatur atque libero sapiente quos laborum praesentium aliquam at assumenda quo tenetur omnis et! Architecto.</p>
+
+      <!--IMAGES-->
+      <img src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" alt="" class="responsive-img circle">
+
+      <!--NAVIGATION-->
+      <!--LEFT LOGO-->
+      <nav>
+        <div class="nav-wrapper blue">
+          <a href="" class="brand-logo">Logo</a>
+          <ul class="right hide-on-med-and-down" id="nav-mobile">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
 
 
 
@@ -34,14 +102,15 @@
 
 
 
-
+      <div style="margin-top:500px"></div>
     </div>
 
 
 
 
-
+  
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>M.AutoInit();</script> <!--Bez ovoga ne radi fixed action button-->
   </body>
 </html>
